@@ -111,7 +111,7 @@ class HuffmanCoding:
 
 	def compress(self):
 		filename, file_extension = os.path.splitext(self.path)
-		output_path = filename + ".bin"
+		output_path =  filename + ".bin"
 
 		with open(self.path, 'r+') as file, open(output_path, 'wb') as output:
 			text = file.read()
